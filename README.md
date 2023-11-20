@@ -1,24 +1,7 @@
 # README
+## Job Board Assignment Lisette Ester and Julienne Büchele
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Set up git
+Follow these steps to set up git repository.
+    git init
+    git clone https://gitlab.mediacube.at/fhs49790/backend-dev_jobboard.git

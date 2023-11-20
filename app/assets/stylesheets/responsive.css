@@ -1,0 +1,58 @@
+/**
+ * 1. Use grid.
+ * 2. Gutter space.
+ * 3. Center at large sizes.
+ * 4. Set maximum width.
+ */
+
+.container {
+  display: grid; /* 1 */
+  grid-gap: 1.5em; /* 2 */
+  margin: 1.5em auto; /* 2, 3 */
+  max-width: 64em; /* 4 */
+  padding: 0 1.5em; /* 2 */
+}
+
+/**
+ * Sidebar inherits grid display styles and gap size. This will be simpler once `display: subgrid` is supported!
+ */
+
+.sidebar {
+  display: inherit;
+  grid-gap: inherit;
+}
+
+/**
+ * At slightly wider sizes, show sidebar elements side by side (each taking up half the space, minus gutter gap and stuff).
+ */
+
+@media (min-width: 34em) and (max-width: 49.9375em) {
+  .sidebar {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/**
+ * At even wider sizes…
+ */
+
+@media (min-width: 50em) {
+  
+  /**
+   * Establish one primary (⅔) column and one secondary (⅓) column.
+   */
+  
+  .container {
+    grid-template-columns: 2fr 1fr;
+  }
+  
+  /**
+   * 1. Automatically create sidebar rows that are as short as their content will allow.
+   * 2. Make this element span two rows, allowing prose elements to flow to its left.
+   */
+  
+  .sidebar {
+    grid-auto-rows: min-content; /* 1 */
+    grid-row: span 2; /* 2 */
+  }
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>JobBoard</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -10,20 +10,22 @@
   </head>
 
   <body>
-  <header class='clearfix'> 
-  <div class="left-nav">
-    <ul>
-      <li><%= link_to "Home", jobs_path %></li>
-    </ul>
-  </div>
-  <div class="right-nav">
-    <ul>
-      <li><%= link_to "Add Job", new_job_path %></li>
-    </ul>
-  </div>
-</header>
-<div class='content'>
-    <%= yield %>
-</div>
+    <div class="controls">
+      <div class="controls-inner">
+        <a <%= link_to "Home", jobs_path %></a>
+      </div>
+    </div>
+
+    <div class='container'>
+      <div class="prose"> 
+        <h1>Open Jobs</h1>
+
+        <p>Welcome to our Job board.  It is completely
+        free, you can find a job or offer a job here.</p>
+
+      </div>
+      <%= yield %>
+    </div>
   </body>
+  <%= render "footer" %>
 </html>

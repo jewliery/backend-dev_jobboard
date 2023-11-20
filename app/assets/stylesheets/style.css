@@ -1,0 +1,105 @@
+/* Boilerplate */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background: #fff;
+  font-family: "Source Sans Pro", sans-serif;
+  line-height: 1.5;
+  margin: 0;
+}
+
+a {
+  color: #456bd9;
+}
+
+.prose * + * {
+  margin-top: 1rem;
+}
+
+.box {
+  background: #dbe5ea;
+  border-radius: 0.5em;
+  overflow: hidden;
+}
+
+.box-header {
+  background: #0f1c3f;
+  color: #fff;
+  font-size: 1.25em;
+  line-height: 1;
+  padding: 1rem;
+}
+
+.box-menu {
+  list-style: none;
+  padding: 0;
+}
+
+.box-menu > * + * {
+  border-top: 2px solid transparent;
+}
+
+.box-menu a {
+  background-color: rgba(255, 255, 255, 0.5);
+  display: block;
+  line-height: 1;
+  padding: 1rem;
+}
+
+.box-menu a,
+.controls a {
+  text-decoration: none;
+}
+
+.controls {
+  background: #dbe5ea;
+  overflow: hidden;
+}
+
+.controls-inner {
+  line-height: 1;
+  margin: 1em auto;
+  max-width: 64em;
+  padding: 0 1.5em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.controls-inner span a {
+  margin-left: 15px;
+}
+
+footer {
+  background-color: #0f1c3f;
+  color: white;
+}
+
+footer div {
+  margin: 1em auto 0 auto;
+  max-width: 64em;
+  padding: 1.5em;
+}
+
+label {
+  display: block;
+}
+
+input,
+textarea {
+  width: 100%;
+  border-radius: 0.5em;
+  border-width: 0px;
+  background-color: #dbe5ea;
+  font-size: 1.25em;
+  line-height: 1;
+  padding: 1rem;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+input[type="submit"] {
+  width: 10em;
+}

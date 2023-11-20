@@ -1,9 +1,31 @@
-<h1>Jobs</h1>
+<div class="sidebar">
+    <div class="box">
+        <h2 class="box-header">Actions</h2>
+        <ul class="box-menu">
+            <li><a <%= link_to "Add Job", new_job_path%></a></li>
+        </ul>
+    </div>
+    <div class="box">
+        <h2 class="box-header">Jobs Overview</h2>
+        <ul class="box-menu">
+            <% @jobs.each do |job| %>
+                <li><a <%= link_to job.title, job_path(job)%></a></li>
+            <% end %>
+        </ul>
+    </div>
+</div>
 
-<h2>Open Jobs</h2>
+<h2>Jobs</h2>
+
 <% @jobs.each do |job| %>
-    <h3><%= job.title %></h3>
-    <p><%= job.description %></p>
-    <h5><%= link_to "Edit Posting", edit_job_path(job)%></h5>
-    <h5><%= button_to 'Delete Posting', job, method: :delete %></h5>
+    <div class="prose"> 
+        <h3><%= job.title %></h3>
+        <p><%= job.description %></p>
+        <p>
+            <a> <%= link_to "View Full Posting", job_path(job)%></a>
+        </p>
+        <h5><%= link_to "Edit Posting", edit_job_path(job)%></h5>
+        <h5><%= button_to 'Delete Posting', job, method: :delete %></h5>
+    </div>
   <% end %>
+
