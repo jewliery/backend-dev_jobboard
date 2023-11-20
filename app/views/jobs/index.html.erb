@@ -1,3 +1,11 @@
+<div class="prose"> 
+<h1>Open Jobs</h1>
+
+<p>Welcome to our Job board.  It is completely
+free, you can find a job or offer a job here.</p>
+
+</div>
+
 <div class="sidebar">
     <div class="box">
         <h2 class="box-header">Actions</h2>
@@ -24,8 +32,6 @@
         <p>
             <a> <%= link_to "View Full Posting", job_path(job)%></a>
         </p>
-        <h5><%= link_to "Edit Posting", edit_job_path(job)%></h5>
-        <h5><%= button_to 'Delete Posting', job, method: :delete %></h5>
     </div>
   <% end %>
 

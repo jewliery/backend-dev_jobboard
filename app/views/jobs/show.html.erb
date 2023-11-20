@@ -1,4 +1,28 @@
 <h1><%= @job.title %></h1>
-  <p><%= @job.description %></p>
-  <%= @job.long_description %>
-  <h5><%= link_to "Back to Jobs List", jobs_path%></h5>
+<p><%= @job.description %></p>
+
+<div class="sidebar">
+    <div class="box">
+        <h2 class="box-header">Actions</h2>
+        <ul class="box-menu">
+            <li><a href="">Apply for this Job</a></li>
+            <li><a <%= link_to "Edit Posting", edit_job_path(@job)%> </a></li>
+            <li><p> <%= link_to "Delete Posting", @job, data: { turbo_method: :delete }%> </p> </li> 
+        </ul>
+    </div>
+    <div class="box">
+        <h2 class="box-header">Related Jobs</h2>
+        <ul class="box-menu">
+            <li><a href="#">Database Developer</a></li>
+            <li><a href="#">Frontend Developer</a></li>
+            <li><a href="#">UI/UX Designer</a></li>
+        </ul>
+    </div>
+</div>
+
+<%= @job.long_description %>
+
+<p>
+  <a <%= link_to "Back to Jobs List", jobs_path%></a>
+</p>
+<h3> <%= button_to "Delete Posting", @job, method: :delete %> </h3>

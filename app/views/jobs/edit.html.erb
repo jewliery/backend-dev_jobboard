@@ -1,2 +1,15 @@
 <h1>Edit Posting</h1>
 <%= render "form" %>
+
+<div class="sidebar">
+    <div class="box">
+        <h2 class="box-header">Actions</h2>
+        <ul class="box-menu">
+            <li><a <%= link_to "Delete Posting", @job, method: :delete %> </a></li>         
+        </ul>
+    </div>
+</div>
+
+<div class="prose">
+  Please only edit your own jobs!
+</div>

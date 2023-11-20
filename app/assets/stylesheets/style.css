@@ -7,7 +7,7 @@
 
 body {
   background: #fff;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Source Sans 3", sans-serif;
   line-height: 1.5;
   margin: 0;
 }
@@ -97,7 +97,7 @@ textarea {
   font-size: 1.25em;
   line-height: 1;
   padding: 1rem;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Source Sans 3", sans-serif;
 }
 
 input[type="submit"] {
