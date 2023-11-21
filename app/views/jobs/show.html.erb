@@ -1,5 +1,7 @@
-<h1><%= @job.title %></h1>
-<p><%= @job.description %></p>
+<div class="prose"> 
+    <h1><%= @job.title %></h1>
+    <p><%= @job.description %></p>
+</div>
 
 <div class="sidebar">
     <div class="box">
@@ -20,9 +22,11 @@
     </div>
 </div>
 
-<%= @job.long_description %>
+<div class="prose"> 
+    <%= @job.long_description %>
 
-<p>
-  <a <%= link_to "Back to Jobs List", jobs_path%></a>
-</p>
-<h3> <%= button_to "Delete Posting", @job, method: :delete %> </h3>
+    <p>
+        <a <%= link_to "Back to Jobs List", jobs_path%></a>
+    </p>
+    <h3> <%= button_to "Delete Posting", @job, method: :delete %> </h3>
+</div>

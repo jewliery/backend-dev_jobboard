@@ -23,15 +23,16 @@ free, you can find a job or offer a job here.</p>
     </div>
 </div>
 
+<div class="prose"> 
 <h2>Jobs</h2>
 
 <% @jobs.each do |job| %>
-    <div class="prose"> 
         <h3><%= job.title %></h3>
         <p><%= job.description %></p>
         <p>
             <a> <%= link_to "View Full Posting", job_path(job)%></a>
         </p>
-    </div>
   <% end %>
+  </div>
+
 
