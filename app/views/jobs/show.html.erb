@@ -7,7 +7,7 @@
         <ul class="box-menu">
             <li><a href="">Apply for this Job</a></li>
             <li><a <%= link_to "Edit Posting", edit_job_path(@job)%> </a></li>
-            <li><a <%= link_to "Delete Posting", @job, data: { turbo_method: :delete }%> </a> </li> 
+            <li><a <%= link_to "Delete Posting", @job, method: :delete %> </a> </li> 
         </ul>
     </div>
     <div class="box">
