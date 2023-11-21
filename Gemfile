@@ -30,3 +30,7 @@ end
 
 
 gem "sassc", "~> 2.4", :group => :development
+
+gem 'inline_svg'
+
+gem 'kramdown'

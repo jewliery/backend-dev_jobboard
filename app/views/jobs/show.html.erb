@@ -23,7 +23,7 @@
 </div>
 
 <div class="prose"> 
-    <%= @job.long_description %>
+    <%= md(@job.long_description) %>
 
     <p>
         <a <%= link_to "Back to Jobs List", jobs_path%></a>

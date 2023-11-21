@@ -92,10 +92,15 @@ GEM
       activesupport (>= 6.1)
     i18n (1.14.1)
       concurrent-ruby (~> 1.0)
+    inline_svg (1.9.0)
+      activesupport (>= 3.0)
+      nokogiri (>= 1.6)
     io-console (0.6.0)
     irb (1.8.3)
       rdoc
       reline (>= 0.3.8)
+    kramdown (2.4.0)
+      rexml
     loofah (2.21.4)
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
@@ -169,6 +174,7 @@ GEM
       psych (>= 4.0.0)
     reline (0.4.0)
       io-console (~> 0.5)
+    rexml (3.2.6)
     ruby2_keywords (0.0.5)
     sassc (2.4.0)
       ffi (~> 1.9)
@@ -198,6 +204,8 @@ PLATFORMS
 
 DEPENDENCIES
   debug
+  inline_svg
+  kramdown
   puma (>= 5.0)
   rails (~> 7.1.1)
   sassc (~> 2.4)
