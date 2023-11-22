@@ -10,6 +10,9 @@ body {
   font-family: "Source Sans 3", sans-serif;
   line-height: 1.5;
   margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 a {
@@ -98,6 +101,7 @@ a {
 footer {
   background-color: #0f1c3f;
   color: white;
+  margin-top: auto;
 }
 
 footer div {
