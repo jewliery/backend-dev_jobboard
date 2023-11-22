@@ -125,3 +125,8 @@ textarea {
 input[type="submit"] {
   width: 10em;
 }
+
+.field_with_errors {
+  background-color: rgb(255, 115, 115);
+  color: rgb(255, 115, 115);
+}
