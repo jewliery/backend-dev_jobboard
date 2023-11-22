@@ -9,7 +9,7 @@
         <ul class="box-menu">
             <li><a href="">Apply for this Job</a></li>
             <li><a <%= link_to "Edit Posting", edit_job_path(@job)%> </a></li>
-            <li><a <%= link_to "Delete Posting", @job, method: :delete %> </a> </li> 
+            <li><%= button_to "Delete Posting", @job, {method: :delete, class: "delete_button"} %> </li> 
         </ul>
     </div>
     <div class="box">
@@ -28,5 +28,4 @@
     <p>
         <a <%= link_to "Back to Jobs List", jobs_path%></a>
     </p>
-    <h3> <%= button_to "Delete Posting", @job, method: :delete %> </h3>
 </div>
