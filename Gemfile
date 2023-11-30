@@ -29,7 +29,7 @@ group :development do
 end
 
 
-gem "sassc", "~> 2.4", :group => :development
+gem "sassc", "~> 2.4"
 
 gem 'inline_svg'
 
