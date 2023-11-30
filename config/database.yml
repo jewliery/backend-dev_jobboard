@@ -24,4 +24,4 @@ test:
 
 production:
   <<: *default
-  url: <%= ENV["https://yellow-jobs.projects.multimediatechnology.at/"] %>
+  url: <%= ENV["DATABASE_URL"] %>
